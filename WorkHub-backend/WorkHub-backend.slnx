@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="WorkHub.API/WorkHub.API.csproj" />
+  <Project Path="WorkHub.Application/WorkHub.Application.csproj" />
+  <Project Path="WorkHub.Domain/WorkHub.Domain.csproj" />
+  <Project Path="WorkHub.Infrastructure/WorkHub.Infrastructure.csproj" />
+</Solution>
