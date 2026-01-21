@@ -3,7 +3,7 @@ using WorkHub.Domain;
 
 public class User : AuditableEntity
 {
-    public string IdentityUserId { get; set; }
+    public Guid IdentityUserId { get; set; }
     public string FullName { get; set; }
     public bool IsActive { get; set; }
 
