@@ -10,4 +10,8 @@
     <ProjectReference Include="..\WorkHub.Domain\WorkHub.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\Exceptions\" />
+  </ItemGroup>
+
 </Project>

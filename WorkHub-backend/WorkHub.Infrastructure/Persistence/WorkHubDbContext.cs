@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using WorkHub.Domain;
 
-namespace WorkHub.Infrastructure.Persistence
+
+namespace WorkHub.Infrastructure
 {
     public class WorkHubDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
     {
