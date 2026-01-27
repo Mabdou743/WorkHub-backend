@@ -18,8 +18,8 @@
             Error = error;
         }
 
-        public static Result Success() => new Result(true, Error.None);
-
+        public static Result Success() => new Result(true, null);
         public static Result Failure(Error error) => new Result(false, error);
     }
+
 }

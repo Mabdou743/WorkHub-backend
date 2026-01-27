@@ -11,11 +11,14 @@ namespace WorkHub.Application
 
         private Error(string code, string message)
         {
+            if (string.IsNullOrWhiteSpace(code))
+                throw new InvalidOperationException("Error code cannot be null or empty.");
+
             Code = code;
             Message = message;
         }
 
-        public static Error None => new Error(string.Empty, string.Empty);
+        public static readonly Error None = new("None", string.Empty);
         public static Error Create(string code, string message) => new (code, message);
     }
 }

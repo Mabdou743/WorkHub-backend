@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkHub.Infrastructure;
 
@@ -11,9 +12,11 @@ using WorkHub.Infrastructure;
 namespace WorkHub.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(WorkHubDbContext))]
-    partial class WorkHubDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260126140124_edit-user")]
+    partial class edituser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
